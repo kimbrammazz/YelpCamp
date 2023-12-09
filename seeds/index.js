@@ -20,7 +20,7 @@ const seedDB = async () => {
 	// first clear database
 	await Campground.deleteMany({});
 	// then seed database
-	for (let i = 0; i, 50; i++) {
+	for (let i = 0; i < 50; i++) {
 		const random1000 = Math.floor(Math.random() * 1000);
 		const camp = new Campground({
 			location: `${cities[random1000].city}, ${cities[random1000].state}`,
